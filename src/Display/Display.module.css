@@ -1,0 +1,35 @@
+.wrapper {
+  min-height: 100vh;
+  width: 100vw;
+  position: relative;
+  left: 50%;
+  transform: translateX(-50%);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1rem;
+  padding: 3rem 2rem;
+  box-sizing: border-box;
+  font-family: "Nunito", sans-serif;
+  background: #1e1533;
+}
+
+.card {
+  width: 100%;
+  max-width: 520px;
+  background: #2b1f4a;
+  border-left: 4px solid #ffd166;
+  border-radius: 12px;
+  padding: 1.1rem 1.5rem;
+  color: #e8e2f5;
+  font-size: 1.05rem;
+  font-weight: 600;
+  line-height: 1.5;
+  box-shadow: 0 6px 16px rgba(0, 0, 0, 0.25);
+  transition: transform 0.15s ease, background 0.15s ease;
+}
+
+.card:hover {
+  transform: translateY(-2px);
+  background: #34275a;
+}

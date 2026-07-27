@@ -1,0 +1,94 @@
+/* JokeWorld.css */
+
+@import url("https://fonts.googleapis.com/css2?family=Baloo+2:wght@700;800&family=Nunito:wght@400;600&display=swap");
+
+body {
+  margin: 0;
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: "Nunito", sans-serif;
+  background:
+    radial-gradient(circle at 15% 20%, rgba(255, 209, 102, 0.25) 0%, transparent 40%),
+    radial-gradient(circle at 85% 80%, rgba(255, 107, 107, 0.25) 0%, transparent 40%),
+    #1e1533;
+  position: relative;
+  overflow-x:hidden
+}
+
+/* soft spotlight glow behind the content */
+body::before {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 700px;
+  height: 700px;
+  transform: translate(-50%, -50%);
+  background: radial-gradient(circle, rgba(255, 255, 255, 0.06) 0%, transparent 70%);
+  pointer-events: none;
+}
+
+/* subtle dotted texture across the page */
+body::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background-image: radial-gradient(rgba(255, 255, 255, 0.06) 1px, transparent 1px);
+  background-size: 26px 26px;
+  pointer-events: none;
+}
+
+h1 {
+  font-family: "Baloo 2", sans-serif;
+  font-weight: 800;
+  font-size: clamp(2.5rem, 6vw, 4.2rem);
+  color: #ffffff;
+  text-align: center;
+  letter-spacing: -0.01em;
+  margin: 0 0 2.5rem;
+  position: relative;
+  z-index: 2;
+  text-shadow: 0 4px 0 rgba(0, 0, 0, 0.15);
+}
+h3 {
+  font-family: "Baloo 2", sans-serif;
+  font-weight: 800;
+  font-size: clamp(2.5rem, 6vw, 4.2rem);
+  color: #ffffff;
+  text-align: center;
+  letter-spacing: -0.01em;
+  margin: 0 0 2.5rem;
+  position: relative;
+  z-index: 2;
+  text-shadow: 0 4px 0 rgba(0, 0, 0, 0.15);
+}
+
+button {
+  display: block;
+  margin: 0 auto;
+  position: relative;
+  z-index: 2;
+  font-family: "Baloo 2", sans-serif;
+  font-weight: 700;
+  font-size: 1.2rem;
+  color: #1e1533;
+  background: #ffd166;
+  border: none;
+  border-radius: 100px;
+  padding: 1rem 2.6rem;
+  cursor: pointer;
+  box-shadow: 0 6px 0 #d99e2b, 0 12px 24px rgba(0, 0, 0, 0.35);
+  transition: transform 0.15s ease, box-shadow 0.15s ease;
+}
+
+button:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 9px 0 #d99e2b, 0 16px 28px rgba(0, 0, 0, 0.4);
+}
+
+button:active {
+  transform: translateY(4px);
+  box-shadow: 0 2px 0 #d99e2b, 0 4px 12px rgba(0, 0, 0, 0.3);
+}

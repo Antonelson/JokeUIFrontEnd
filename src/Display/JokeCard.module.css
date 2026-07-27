@@ -1,0 +1,43 @@
+.wrapper {
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: linear-gradient(180deg, #1b1430 0%, #241b42 100%);
+  padding: 2rem;
+  box-sizing: border-box;
+  font-family: "Nunito", sans-serif;
+}
+
+.card {
+  width: 100%;
+  max-width: 700px;
+  background: #30224f;
+  border-left: 6px solid #ffd166;
+  border-radius: 16px;
+  padding: 2rem;
+  box-shadow: 0 14px 30px rgba(0, 0, 0, 0.3);
+}
+
+.setup {
+  margin: 0;
+  color: #ffffff;
+  font-size: 2rem;
+  font-weight: 800;
+  line-height: 1.4;
+}
+
+.punchline {
+  margin-top: 2rem;
+  color: #ffd166;
+  font-size: 1.4rem;
+  font-weight: 700;
+  line-height: 1.6;
+  padding-top: 1.2rem;
+  border-top: 1px solid rgba(255, 255, 255, 0.15);
+}
+
+.card:hover {
+  transform: translateY(-4px);
+  transition: 0.2s ease;
+}
